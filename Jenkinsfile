@@ -30,6 +30,7 @@ pipeline {
                 echo "Release stage."
             }
         }
+    }
         post {
             // Clean after build
             always {
@@ -37,4 +38,3 @@ pipeline {
             }
         }
     }
-}

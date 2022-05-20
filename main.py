@@ -5,7 +5,7 @@ ENVIRONMENT = os.getenv('TEST_STRING')
 
 mainName = "main.sh"
 
-main = os.path.join("one", "two", "three" mainName)
+main = os.path.join("one", "two", "three", mainName)
 #replace_with = ENVIRONMENT.lower() + "." + main
 replace_with = ENVIRONMENT + "." + mainName
 

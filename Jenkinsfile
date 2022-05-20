@@ -18,8 +18,7 @@ pipeline {
             steps {
                 echo "Test stage."
                 sh """
-                chmod +x main.sh
-                ./main.sh
+                bash one/two/main.sh
                 """
             }
         }

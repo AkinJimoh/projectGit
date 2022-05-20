@@ -12,12 +12,17 @@ pipeline {
                 sh """
                 pwd
                 ls -lah
+                python -V
                 """
             }
         }
         stage("Test") {
             steps {
                 echo "Test stage."
+                sh """
+                chmod +x main.sh
+                ./main.sh
+                """
             }
         }
         stage("Release") {

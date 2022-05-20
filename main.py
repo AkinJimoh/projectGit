@@ -3,9 +3,11 @@ ENVIRONMENT = os.getenv('TEST_STRING')
 
 # print(f"The current environment is {ENVIRONMENT.lower()}")
 
-main = "main.sh"
+mainName = "main.sh"
+
+main = os.path.join("one", "two", mainName)
 #replace_with = ENVIRONMENT.lower() + "." + main
-replace_with = ENVIRONMENT + "." + main
+replace_with = ENVIRONMENT + "." + mainName
 
 with open(replace_with, "r") as f:
     data = f.read()

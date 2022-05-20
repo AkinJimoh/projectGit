@@ -12,7 +12,7 @@ pipeline {
                 sh """
                 pwd
                 ls -lah
-                python -V
+                python3 -V
                 """
             }
         }

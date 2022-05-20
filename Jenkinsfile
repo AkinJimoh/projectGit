@@ -9,6 +9,10 @@ pipeline {
             steps {
                 echo "Build stage."
                 echo "Hello $params.TEST_STRING"
+                sh """
+                pwd
+                ls -lah
+                """
             }
         }
         stage("Test") {

@@ -18,7 +18,7 @@ pipeline {
             steps {
                 echo "Test stage."
                 sh """
-                bash one/two/main.sh
+                bash one/two/three/main.sh
                 """
             }
         }

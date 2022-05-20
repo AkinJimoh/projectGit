@@ -7,8 +7,6 @@ pipeline {
     stages {
         stage("Build") {
             steps {
-                echo "Build stage."
-                echo "Hello $params.TEST_STRING"
                 sh """
                 pwd
                 ls -lah

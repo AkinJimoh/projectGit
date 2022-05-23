@@ -1,11 +1,12 @@
 import os
 ENVIRONMENT = os.getenv('TEST_STRING')
+DIR = "config/"
 
 ConfigFile = "main.sh"
 
 DynamicFile = os.path.join("one", "two", "three", ConfigFile)
 #REPLACEMENT = ENVIRONMENT.lower() + "." + DynamicFile
-REPLACEMENT = ENVIRONMENT + "." + ConfigFile
+REPLACEMENT = DIR + ENVIRONMENT + "." + ConfigFile
 
 with open(REPLACEMENT, "r") as f:
     data = f.read()

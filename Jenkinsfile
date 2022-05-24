@@ -1,8 +1,8 @@
 pipeline {
     agent any
     parameters {
-        string(name: "TEST_STRING", defaultValue: "DEV", trim: true, description: "Sample string parameter")
-        choice(name: "TEST_CHOICE", choices: ["production", "staging", "development"], description: "Sample multi-choice parameter")
+        // string(name: "TEST_STRING", defaultValue: "DEV", trim: true, description: "Sample string parameter")
+        choice(name: "TEST_STRING", choices: ["dev", "prod", "sit"], description: "Sample multi-choice parameter")
     }
     stages {
         stage("Build") {
@@ -18,7 +18,7 @@ pipeline {
             steps {
                 echo "Test stage."
                 sh """
-                bash one/two/three/main.sh
+                bash main.sh
                 """
             }
         }

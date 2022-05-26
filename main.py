@@ -6,7 +6,7 @@ ConfigFile = "main.sh"
 
 # DynamicFile = os.path.join("one", "two", "three", ConfigFile)
 #REPLACEMENT = ENVIRONMENT.lower() + "." + DynamicFile
-REPLACEMENT = "main" + "." + ENVIRONMENT + "." + "json"
+REPLACEMENT = "main" + "." + ENVIRONMENT + "." + "sh"
 # REPLACEMENT = f"main.{ENVIRONMENT}.sh"
 
 with open(REPLACEMENT, "r") as f:

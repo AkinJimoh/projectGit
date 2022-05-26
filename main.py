@@ -14,7 +14,7 @@ if ENVIRONMENT == "test":
     REPLACEMENT = "main" + "." + "dev" + "." + "sh"
 else:
     REPLACEMENT = "main" + "." + ENVIRONMENT + "." + "sh"
-print("Your Selected Environment Is:" + ENVIRONMENT)
+print("Your Selected Environment Is: " + ENVIRONMENT.upper())
 
 
 with open(REPLACEMENT, "r") as f:

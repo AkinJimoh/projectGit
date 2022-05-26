@@ -2,12 +2,18 @@ import os
 ENVIRONMENT = os.getenv('TEST_STRING').lower()
 # DIR = "config/"
 
-ConfigFile = "main.sh"
+
 
 # DynamicFile = os.path.join("one", "two", "three", ConfigFile)
 #REPLACEMENT = ENVIRONMENT.lower() + "." + DynamicFile
-REPLACEMENT = "main" + "." + ENVIRONMENT + "." + "sh"
 # REPLACEMENT = f"main.{ENVIRONMENT}.sh"
+
+ConfigFile = "main.sh"
+if ENVIRONMENT = "TEST"
+    REPLACEMENT = "main" + "." + "dev" + "." + "sh"
+else:
+    REPLACEMENT = "main" + "." + ENVIRONMENT + "." + "sh"
+
 
 with open(REPLACEMENT, "r") as f:
     data = f.read()

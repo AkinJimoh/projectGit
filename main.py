@@ -9,7 +9,7 @@ ENVIRONMENT = os.getenv('TEST_STRING').lower()
 # REPLACEMENT = f"main.{ENVIRONMENT}.sh"
 
 ConfigFile = "main.sh"
-if ENVIRONMENT = "TEST"
+if ENVIRONMENT == "TEST"
     REPLACEMENT = "main" + "." + "dev" + "." + "sh"
 else:
     REPLACEMENT = "main" + "." + ENVIRONMENT + "." + "sh"

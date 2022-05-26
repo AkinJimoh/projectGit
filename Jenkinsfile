@@ -2,7 +2,7 @@ pipeline {
     agent any
     parameters {
         // string(name: "TEST_STRING", defaultValue: "DEV", trim: true, description: "Sample string parameter")
-        choice(name: "TEST_STRING", choices: ["sit", "dev", "prod"], description: "Sample multi-choice parameter")
+        choice(name: "TEST_STRING", choices: ["SIT", "DEV", "PROD"], description: "Sample multi-choice parameter")
     }
     stages {
         stage("Build") {
